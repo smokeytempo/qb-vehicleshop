@@ -3,12 +3,13 @@ game 'gta5'
 lua54 'yes'
 author 'Kakarot'
 description 'Allows players to purchase vehicles and manage shops through a job'
-version '2.1.0'
+version '2.2.0'
 
 shared_script {
     'config.lua',
     '@qb-core/shared/locale.lua',
-    'locales/en.lua',
+    'locales/en.lua', 
+    'locales/el.lua',
     'locales/*.lua'
 }
 
@@ -18,6 +19,7 @@ client_scripts {
     '@PolyZone/EntityZone.lua',
     '@PolyZone/CircleZone.lua',
     '@PolyZone/ComboZone.lua',
+    'enhancements.lua',
     'client.lua'
 }
 

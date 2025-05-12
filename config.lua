@@ -7,9 +7,19 @@ Config.PaymentInterval = 24                           -- time in hours between p
 Config.MinimumDown = 10                               -- minimum percentage allowed down
 Config.MaximumPayments = 24                           -- maximum payments allowed
 Config.PreventFinanceSelling = false                  -- allow/prevent players from using /transfervehicle if financed
-Config.FilterByMake = false                           -- adds a make list before selecting category in shops
+Config.FilterByMake = true                            -- adds a make list before selecting category in shops
 Config.SortAlphabetically = true                      -- will sort make, category, and vehicle selection menus alphabetically
 Config.HideCategorySelectForOne = true                -- will hide the category selection menu if a shop only sells one category of vehicle or a make has only one category
+
+-- Enhanced features
+Config.AllowTestDriveDiscount = true                  -- enable discounts for test driving a vehicle before purchasing
+Config.TestDriveDiscount = 0.05                      -- 5% discount if player test drives first
+Config.EnableShowroomRotation = true                 -- enable rotation of showroom vehicles
+Config.ShowroomRotationSpeed = 0.015                 -- rotation speed of showroom vehicles (higher = faster)
+Config.ShowVehicleStats = true                       -- show vehicle stats in the purchase menu (top speed, acceleration, braking)
+Config.EnableCustomColors = true                     -- allow customers to choose custom colors when purchasing
+Config.EnableVehicleTax = true                       -- enable tax on vehicle purchases
+Config.VehicleTaxPercentage = 0.08                  -- 8% tax on vehicle purchases
 Config.Shops = {
     ['pdm'] = {
         ['Type'] = 'free-use', -- no player interaction is required to purchase a car
